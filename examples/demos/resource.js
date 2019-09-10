@@ -1,6 +1,5 @@
 import React from 'react'
 import { Calendar, Views } from 'react-big-calendar'
-import ExampleControlSlot from '../ExampleControlSlot'
 
 const events = [
   {
@@ -35,7 +34,13 @@ const events = [
 ]
 
 const resourceMap = [
-  { resourceId: 1, resourceTitle: 'Board room' },
+  {
+    resourceId: 1,
+    resourceTitle: 'Board room',
+    onClick: () => {
+      console.log('clicked me')
+    },
+  },
   { resourceId: 2, resourceTitle: 'Training room' },
   { resourceId: 3, resourceTitle: 'Meeting room 1' },
   { resourceId: 4, resourceTitle: 'Meeting room 2' },
