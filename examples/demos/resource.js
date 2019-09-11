@@ -40,6 +40,9 @@ const resourceMap = [
     onClick: () => {
       console.log('clicked me')
     },
+    style: {
+      backgroundColor: 'red',
+    },
   },
   { resourceId: 2, resourceTitle: 'Training room' },
   { resourceId: 3, resourceTitle: 'Meeting room 1' },

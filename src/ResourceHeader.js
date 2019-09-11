@@ -5,6 +5,7 @@ const ResourceHeader = ({ label, resource }) => {
   return (
     <div
       className="rbc-resource-header"
+      style={resource.style !== null ? resource.style : null}
       onClick={
         resource.onClick !== null && typeof resource.onClick === 'function'
           ? resource.onClick
